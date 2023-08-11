@@ -370,6 +370,7 @@ form button:hover{
         margin: 0;
     }
     nav{
+        margin: 0;
         justify-content: space-between;
         align-items: center;
     }
@@ -387,7 +388,7 @@ form button:hover{
     }
     nav ul{
         position: fixed;
-        top: 0;
+        top: -20px;
         right: 0;
         width: 150px;
         height: 100vh;
@@ -395,7 +396,7 @@ form button:hover{
         transition: 1s;
         right: -200px;
         z-index: 2;
-        background: #000;
+        background: #0000003a;
         display: flex;
         flex-direction: column;
     }
@@ -482,7 +483,7 @@ justify-content: center;
         }
     .abt div{
         position: absolute;
-        margin-top: -150px;
+        margin-top: -500px;
         margin-left: 20px;
         font-size: 40px;
         background-image: url("https://images.pexels.com/photos/1563016/pexels-photo-1563016.jpeg?cs=srgb&dl=pexels-steve-johnson-1563016.jpg&fm=jpg");
@@ -492,14 +493,15 @@ justify-content: center;
          background-size: cover;
     }
     #section-1-5 p{
+        font-size: 15px;
         position: absolute;
         border-radius: 2em;
         padding: 20px;
-        width: 300px;
+        width: 200px;
         background: rgba(128, 128, 128, 0.489);
         height: max-content;
-        right: 10px;
-        top: 900px;
+        right: 122px;
+        top: 750px;
         
     }
     
@@ -509,4 +511,91 @@ justify-content: center;
         flex-direction: column;
         justify-content: center;
     }
+
+ /* -------------section 3-------------- */
+#project{
+    font-family: 'Ubuntu', sans-serif;
+}
+ #project h1{
+    font-size: 40px;
+text-align: center;
  }
+ .rail{
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    
+ }
+ .rail .rail-1{
+    padding: 20px;
+    font-size: 40px;
+    width: 400px;
+    text-align: justify;;
+ }
+ .rail div p{
+    font-style: bold;
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+ }
+ .rail div button{
+    
+    background: rgb(71, 150, 234);
+    left: 50%;
+    border: 0;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+ }
+ .rail img{
+    width: 100%;
+    /* height: 30%; */
+    border-radius: 2em;
+ }
+ .shop{
+    
+    justify-content: right;
+    display: flex;
+    flex-direction: column;
+    
+ }
+ .shop div{
+    padding: 20px;
+    font-size: 40px;
+    width: 400px;
+    text-align: justify;
+ }
+ .shop div p{
+    font-size: 20px;
+    padding: 20px;
+ }
+ .shop div button{
+    position: absolute;
+    background: rgb(71, 150, 234);
+    right: 50%;
+    border: -20px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+ }
+ .shop img{
+    align-items: center;
+    width: 100%;
+    border-radius: 2em;
+ 
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .form {
+    width: 400px;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+}
