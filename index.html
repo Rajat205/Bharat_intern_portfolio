@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="index.css">
+    <!-- fontausom -->
+    <script src="https://kit.fontawesome.com/8625ac6713.js" crossorigin="anonymous"></script>
+
+    <title>portfolio</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <section id="section-1">
+        <nav>
+            <h1>Portfolio</h1>
+            <ul id="slide-bar">
+                <li><a onclick="hide()" href="#section-1-5">About me</a> </li>
+                <li><a onclick="hide()" href="#project">Projects</a> </li>
+                <li><a onclick="hide()" href="">services</a> </li>
+                <li><a onclick="hide()" href="">contacts</a> </li>
+                <li><a onclick="hide()" class="dldbtn" href="" download>Download cv</a></li>
+                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+        <img src="img/brush.png" alt="">
+        <div>
+            <div class="txt"><span class="rajat">RAJAT</span> SONI</div>
+            <h2>I'm <span id="element"></span></h2>
+        </div>
+        
+    </section>
+        <section id="section-1-5">
+        <div class="abt">
+            <img data-aos="fade-right" src="img/ab-photo.jpg" alt="">
+            <div data-aos="fade-up">About me</div>
+            <p data-aos="fade-left">I am a multi-talented person with a passion for creativity. I'm skilled in
+                sketching, web development, and designing which showcase my artistic side. I have an eye for
+                detail and a knack for bringing ideas to life. My hobbies include gaming and sketching, which
+                allow me to express my creativity and relax. I am a well-rounded individual who is always
+                looking for ways to learn and grow.</p>
+
+        </div>
+    
+    </section>
+
+    <h1 class="title">Qualification</h1>
+    <section id="section-2" >
+        
+        <div class="school-1" data-aos="fade-up">
+            <h2>2021-Present</h2>
+            <h3>The Technological institute of textile & sciences</h3>
+            <h3>persuing B.Tech</h3>
+        </div>
+
+        <div class="school-2" data-aos="fade-up">
+            <h2>2018-2021</h2>
+            <h3>Ch.Bansilal Polytechnic college</h3>
+            <h3>Diploma</h3>
+            <h4>Grade 7.20 gpa</h4>
+        </div>
+
+        <div class="school-3" data-aos="fade-up">
+            <h2>2017-2018</h2>
+            <h3>Seth krorimal Ser. school</h3>
+            <h3>10th</h3>
+            <h4>Grade 70%</h4>
+        </div>
+    </section>
+
+    <section id="project">
+        <h1>Project</h1>
+        <div class="rail">
+            <img src="img/8915911.jpg" alt="">
+            <div>
+            <div>Rail yatra</div>
+            <p>you can track your trail here eventhough you can book your tickets and play some fun full games. Rail yatra provides you a lot pof services like ticket booking, train tracking  </p>
+            <button>Demo</button>
+        </div>
+        </div>
+        <div class="shop">
+            <div>
+                <div>loot market</div>
+                <p>you can track your trail here eventhough you can book your tickets and play some fun full games. Rail yatra provides you a lot pof services like ticket booking, train tracking  </p>
+                <button>Demo</button>
+            </div>
+            <img src="img/3255317.jpg" alt="">
+            
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-info">
+            <h1>Contact me</h1>
+            <h4><i class="fa-solid fa-envelope" ></i> rajatsoni1918@gamil.com
+            </h4>
+            <h4><i class="fa-solid fa-phone" ></i> +91 9817695654</h4>
+            <ul>
+                <li class="lis1"><a
+                        href="https://instagram.com/mahajan.samridhi.5?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"><i
+                            class="fa-brands fa-instagram" ></i></a></li>
+                <li class="lis2"><a href="https://www.linkedin.com/in/samridhi-mahajan-91b842214"><i
+                            class="fa-brands fa-linkedin" ></i></a></li>
+                <li class="lis3"><a href="https://twitter.com/Rajatsoni07"><i class="fa-brands fa-twitter"
+                        ></i></i></a>
+                </li>
+                <li class="lis4"><a href="https://github.com/samridhi-mahajan"><i class="fa-brands fa-github"
+                            ></i></a></li>
+            </ul>
+
+        </div>
+        <div class="container form">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Username" placeholder="Enter your name" required>
+                <input type="email" name="Email" placeholder="Enter your email" id="email" required>
+                <textarea id="massage" name="Message" placeholder="Enter your message" cols="20" rows="5"
+                    required></textarea><br>
+                <!-- <button>send</button> -->
+                <button type="submit" name="submit" id="sent" onclick="send()">send</button>
+            </form>
+            <span id="sent-msg"></span>
+        </div>
+    </section>
+    <footer>
+        <h3><i class="fa-regular fa-copyright"></i> copyright 2023 Published by Rajat soni</h3>
+    </footer>
+
+    <script>
+        let sidemenu = document.getElementById('slide-bar');
+        function hide() {
+            sidemenu.style.right = "-200px";
+            sidemenu.style.transition = "0.2s";
+        }
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Sketch artist', 'designer', 'web developer', 'photo editor'],
+            typeSpeed: 50,
+            loop: true,
+            loopCount: Infinity,
+        });
+    </script>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+                offset: 300,
+                duration: 2000
+            })
+    </script>
+</body>
+
+</html>
